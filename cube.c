@@ -1,9 +1,20 @@
-#include <stdio.h>
-int cube(int num){
-    return num*num*num;
+#include<stdio.h>
+
+// fuction 
+int cube(int a)
+{
+    int c=a*a*a;
+    return c;
 }
-int main(){
+
+
+
+// main functon 
+int main()
+{
     int num;
+    printf("enter num :");
     scanf("%d",&num);
-    printf("The cube of number is %d",cube(num));
+    int c=cube(num);
+    printf("cube of %d is %d",num,c);
 }
